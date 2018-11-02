@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman!</title>
+    <link rel="stylesheet" href="Assets/CSS/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+</head>
+
+<body>
+    <header class="header text-center">
+        <div class="row">
+            <div class="col-md-12"><img class="img-fluid" src="Assets/Images/logo-neon.png" alt="Game Name Logo"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12"><button onclick="beginGame()" class="button btn-lg" id="pressKeyTryAgain">Let's Play!</button></div>
+        </div>
+
+    </header>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-12">Score</div>
+                    <div class="row">
+                        <div class="col-xs-3">Wins</div> 
+                        <div class="col-xs-3 score-div"id="wins"></div>
+                        <div class="col-xs-3">Losses</div>
+                        <div class="col-xs-3 score-div" id="losses"></div>
+                    </div>
+                </div>             
+
+                <div class="row">
+                    <div class="col-sm-6">Guesses Remaining</div>
+                    <div class="col-sm-6 score-div" id="remaining-guesses"> </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6">Letters Guessed</div>
+                    <div class="col-md-6 score-div" id="guessed-letters"> </div>
+                </div>
+            </div>
+        
+            <div class="col-md-6 gameplay-column" id="winlossimg">
+
+                <div class="row container-fluid word-display-div" id="word-display"> </div>
+
+                <img class="img-fluid" id="shante" src="Assets/Images/shante-you-stay.gif" alt="Winning Image" />
+                <img class="img-fluid" id="sashay" src="Assets/Images/sashay-away.png" alt="Game Over Image" />
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+
+<script type="text/javascript" src="Assets/Javascript/game.js"></script>
+
+</html>

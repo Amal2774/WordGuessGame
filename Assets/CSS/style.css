@@ -1,0 +1,71 @@
+.body {
+    background-color: black
+}
+
+.header {
+    margin: 0px;
+    border: 3px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+
+}
+
+.container-fluid {
+    margin: 0px;
+    border: 5px;
+    padding: 5px;
+    width: span;
+    height: auto;
+    background-color: #992c9c;
+    color: white;
+
+}
+
+.container {
+    margin: 5px;
+    border: 3px;
+    padding: 5px;
+    background-color: black;
+    color: aquamarine;
+
+}
+
+.game-col {
+    background-color: black;
+    margin: 2px;
+}
+
+.score-div {
+    width: 90%;
+    height: 25px;
+    margin: 3px;
+    border: 2px;
+    padding: 3px;
+    position: relative;
+    border-color: black;
+    background: white;
+    color: rgb(66, 0, 128);
+    text-emphasis-style: bold;
+    text-align: center
+}
+
+.word-display-div {
+    width: 400px;
+    height: 35px;
+    margin: 2px;
+    border: 5px;
+    padding: 5px;
+    border-color: black;
+    background: white;
+    color: rgb(66, 0, 128);
+    text-emphasis-style: bold;
+    font-size: 21px;
+}
+
+.button {
+    border-color: black;
+    background-color: rgb(56, 223, 245);
+    color: black;
+    font-weight: bold;
+}

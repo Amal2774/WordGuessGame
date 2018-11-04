@@ -1,0 +1,26 @@
+html
+
+<script>
+document.onkeyup = function(event){
+    letterChoices = event.key;
+
+    if(randomWord.indexOf(letterChoices) > -1){
+        for (var j = 0; j <randomWord.length; j++){
+            if (randomWord[j] === letterChoices){
+                wordUnderscores[j]=== letterChoices;
+                console.log(wordUnderscores);
+                wins++;
+                }
+        }
+    }
+
+    else{
+        guessedLetters.push(letterChoices);
+        guessesLeft--;
+        losses++;
+        
+        console.log(guessesLeft);
+    };  
+}
+
+</script>
